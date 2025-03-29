@@ -70,7 +70,7 @@ function Home() {
   return (
     <div className='h-screen w-full  flex items-center justify-center flex-col gap-1 bg-[#202124]'>
                <div className = 'h-10 w-10 rounded-full bg-white overflow-hidden '>
-              <img src="images/crop.png" alt="" />
+              <img src="https://res.cloudinary.com/dzryfm8cb/image/upload/v1743270407/Crop_mx4da2.png" alt="" />
            </div>
       <h1 id='font' className=' text-3xl text-purple-300 font-bold '>HR Interview </h1>
 

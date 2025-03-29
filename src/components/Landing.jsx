@@ -6,7 +6,7 @@ function Landing() {
     <div className='h-screen w-full bg-[#202124] gap-4    flex flex-col items-center justify-center overflow-hidden'>
        
         <div className = 'h-30 w-30 rounded-full bg-white overflow-hidden '>
-              <img src="images/crop.png" alt="" />
+              <img src="https://res.cloudinary.com/dzryfm8cb/image/upload/v1743270407/Crop_mx4da2.png" alt="" />
         </div>
         
         <h1 id='font' className='text-3xl text-purple-500'> Welcome To Hiring Wallah<span className='text-5xl'>🦉</span> </h1>

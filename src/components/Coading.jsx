@@ -45,7 +45,7 @@ useEffect(() => {
     <div className=' w-[50%] bg-[#202124] '>
     <div className=' w-full  bg-zinc-900 p-5  flex gap-2'>
     <div className = 'h-10 w-10 rounded-full bg-white overflow-hidden '>
-              <img src="images/crop.png" alt="" />
+              <img src="https://res.cloudinary.com/dzryfm8cb/image/upload/v1743270407/Crop_mx4da2.png" alt="" />
            </div>
         <h1 className='text-white text-2xl font-bold mt-1 '>
            Compatative Test 
