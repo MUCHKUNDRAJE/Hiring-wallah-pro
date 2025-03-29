@@ -69,12 +69,14 @@ function Home() {
 
   return (
     <div className='h-screen w-full  flex items-center justify-center flex-col gap-1 bg-[#202124]'>
-           
-      <h1 className='text-3xl text-slate-100'>HR Interview</h1>
+               <div className = 'h-10 w-10 rounded-full bg-white overflow-hidden '>
+              <img src="images/crop.png" alt="" />
+           </div>
+      <h1 id='font' className=' text-3xl text-purple-300 font-bold '>HR Interview </h1>
 
 <div className='flex items-center justify-center gap-4 mt-4'>
   <div>
-     <h1 className='text-white text-center'>HR</h1>
+     <h1 className='text-white text-center '>HR</h1>
       <div className=' w-[40rem] rounded-lg overflow-hidden shadow-lg relative '>
           <Webcam   videoConstraints={{ facingMode: "user" }} />
           <canvas ref={canvasRef} className="absolute top-0 left-0" />
@@ -82,7 +84,7 @@ function Home() {
   </div>
 
     <div>
-       <h1  className='text-white text-center'>Job Seeker</h1>
+       <h1  className='text-white text-center '>Job Seeker</h1>
     <div className=' w-[40rem] rounded-lg overflow-hidden shadow-lg relative '>
           <Webcam  ref={webcamRef} videoConstraints={{ facingMode: "user" }} />
           <canvas ref={canvasRef} className="absolute top-0 left-0" />
@@ -91,6 +93,7 @@ function Home() {
 </div>
       <div>
         <h1 className='text-2xl text-slate-100 mt-4'>Detected Emotion: {emotion}</h1>
+
       </div>
 
     </div>

@@ -3,6 +3,8 @@ import Editor from '@monaco-editor/react';
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 function Coading() {
 const [Switch, setSwitch] = useState(0);
@@ -41,8 +43,11 @@ useEffect(() => {
   return (
     <div className='h-screen w-full bg-[#202124] gap-1  flex overflow-hidden'> 
     <div className=' w-[50%] bg-[#202124] '>
-    <div className=' w-full  bg-zinc-900 p-5'>
-        <h1 className='text-white text-2xl font-bold '>
+    <div className=' w-full  bg-zinc-900 p-5  flex gap-2'>
+    <div className = 'h-10 w-10 rounded-full bg-white overflow-hidden '>
+              <img src="images/crop.png" alt="" />
+           </div>
+        <h1 className='text-white text-2xl font-bold mt-1 '>
            Compatative Test 
           </h1> 
     </div>
@@ -86,7 +91,9 @@ useEffect(() => {
          <h1 className='p-2 hover:bg-zinc-700 cursor-pointer  '>Editor</h1>
          <h2 className='p-2 hover:bg-zinc-700 cursor-pointer '>Discription</h2>
         </div>
+        <Link to="/">
         <div className='p-2 hover:bg-zinc-700 cursor-pointer text-red-500 font-bold'>Back</div>
+        </Link>
       </div>
        <button className='bg-white px-2 rounded ml-3 mt-2 mb-2'>Java</button>
      <Editor 
